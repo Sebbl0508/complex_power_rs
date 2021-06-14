@@ -57,6 +57,11 @@ fn main() {
             modifier[1] += 0.005;
         }
 
+        if mode_2d.is_key_released(KeyboardKey::KEY_R) {
+            modifier[0] = 0.0;
+            modifier[1] = 0.0;
+        }
+
 
         iterations[0] = Complex::new(modifier[0], modifier[1]);
         iterations[0] = (iterations[0].powu(2)) + c;
@@ -89,6 +94,6 @@ fn main() {
         mode_2d.draw_circle((s_width / 2) - s_middle, (s_height / 2) - s_middle, 3.0, Color::WHITE);
 
         // Outer Circle
-        mode_2d.draw_circle_lines((s_width / 2) - s_middle, (s_height / 2) - s_middle, (s_width / 2) as f32, Color::WHITE);
+        mode_2d.draw_ring_lines(Vector2::new(0.0, 0.0), s_middle as f32, s_middle as f32, 0, 360, 360, Color::WHITE);
     }
 }
