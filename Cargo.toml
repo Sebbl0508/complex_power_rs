@@ -1,0 +1,8 @@
+[package]
+name = "complex_power_2_rs"
+authors = ["Sebbl"]
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+raylib = "3.5.0"
