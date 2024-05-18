@@ -94,6 +94,6 @@ fn main() {
         mode_2d.draw_circle((s_width / 2) - s_middle, (s_height / 2) - s_middle, 3.0, Color::WHITE);
 
         // Outer Circle
-        mode_2d.draw_ring_lines(Vector2::new(0.0, 0.0), s_middle as f32, s_middle as f32, 0, 360, 360, Color::WHITE);
+        mode_2d.draw_ring_lines(Vector2::new(0.0, 0.0), s_middle as f32, s_middle as f32, 0.0, 360.0, 360, Color::WHITE);
     }
 }
